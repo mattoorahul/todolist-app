@@ -14,6 +14,8 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,7 +26,7 @@
         <h1 align="center">Todo List</h1>
 
         <div class="row">
-            <div class="col-8">
+            <div class="col-md-7">
                 <div class="form-group">
                     <label for="inpNewTask">New Task</label>
                     <input type="text" class="form-control" id="inpNewTask" aria-describedby="newTaskHelp"
@@ -33,16 +35,20 @@
                         task.</small>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-5 row">
                 <!-- Buttons -->
                 <div class="row px-4">
-                    <button class="btn btn-success col m-2" id="btnAdd"><i class="fas fa-plus-square"></i> Add</button>
-                    <button class="btn btn-danger col m-2" id="btnClear"><i class="fas fa-backspace"></i> Reset</button>
+                    <button class="btn btn-success col-12 col-sm-3 col-md-6 p-1" id="btnAdd"><i
+                            class="fas fa-plus-square"></i> Add</button>
+                    <button class="btn btn-danger col-12 col-sm-3 col-md-6 p-1" id="btnClear"><i
+                            class="fas fa-backspace"></i> Reset</button>
                 </div>
                 <div class="row px-4">
-                    <button class="btn btn-info col m-2" id="btnAdd"><i class="fas fa-sort-amount-down"></i>
+                    <button class="btn btn-info col-12 col-sm-3 col-md-6 p-1" id="btnSort"><i
+                            class="fas fa-sort-amount-down"></i>
                         Sort</button>
-                    <button class="btn btn-warning col m-2" id="btnClear"><i class="fas fa-trash-alt"></i>
+                    <button class="btn btn-warning col-12 col-sm-3 col-md-6 p-1" id="btnCleanup"><i
+                            class="fas fa-trash-alt"></i>
                         Cleanup</button>
                 </div>
             </div>
@@ -52,11 +58,7 @@
 
         <!-- Task List -->
         <ul class="row list-group m-2" id="ulTasks">
-            <li class="list-group-item">A</li>
-            <li class="list-group-item">A</li>
-            <li class="list-group-item">A</li>
-            <li class="list-group-item">A</li>
-            <li class="list-group-item">A</li>
+
         </ul>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
